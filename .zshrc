@@ -1,3 +1,6 @@
+"export http_proxy="http://web-proxy.tencent.com:8080"
+"export https_proxy="$http_proxy"
+
 source ~/antigen.zsh
 
 antigen use oh-my-zsh
@@ -12,8 +15,6 @@ antigen bundle zsh-users/zsh-autosuggestions
 antigen bundle zsh-users/zsh-apple-touchbar
 
 antigen bundle skywind3000/z.lua
-antigen bundle changyuheng/fz
-antigen bundle rupa/z
 
 # Tell Antigen that you're done.
 antigen apply
@@ -41,6 +42,14 @@ EDITOR=vim
 alias ll="ls -al"
 alias myhabit="history | awk '{CMD[$2]++;count++;} END { for (a in CMD )print CMD[a] " " CMD[a]/count*100 "% " a }' | grep -v "./" | column -c3 -s " " -t | sort -nr | nl | head -n10"
 
+# skywind3000/z.lua
+export _ZL_MATCH_MODE=1
+alias zc='z -c'      # 严格匹配当前路径的子路径
+alias zz='z -i'      # 使用交互式选择模式
+alias zf='cd "$(z -l -s | fzf --reverse --height 35%)"'
+
+# fzf
+export FZF_DEFAULT_OPTS="--height 40% --layout=reverse --preview '(highlight -O ansi {} || cat {}) 2> /dev/null | head -500'"
 
 fancy-ctrl-z () {
   if [[ $#BUFFER -eq 0 ]]; then

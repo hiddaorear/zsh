@@ -20,7 +20,6 @@ z比autojump强大好用。
 
  skywind3000/z.lua
  changyuheng/fz
- rupa/z
 
 ## 使用
 
@@ -29,6 +28,13 @@ z比autojump强大好用。
 - `ag`比grep性能更好
 - `ccat`cat的增强，高亮文本
 
+## 插件依赖
+
+- fzf
+- ag
+
+
 ### 版本
 
 - 2019/3/31 深夜创建
+- 2019/4/3 增加fzf
