@@ -1,5 +1,5 @@
-"export http_proxy="http://web-proxy.tencent.com:8080"
-"export https_proxy="$http_proxy"
+#export http_proxy="http://web-proxy.tencent.com:8080"
+#export https_proxy="$http_proxy"
 
 source ~/antigen.zsh
 
