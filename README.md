@@ -9,17 +9,17 @@ antigen
 
 ### 功能增强
 
-zsh-syntax-highlighting
-zsh-completions
-zsh-autosuggestions
-zsh-apple-touchbar
+- zsh-syntax-highlighting
+- zsh-completions
+- zsh-autosuggestions
+- zsh-apple-touchbar
 
 ### 目录跳转
 
 z比autojump强大好用。
 
- skywind3000/z.lua
- changyuheng/fz
+- skywind3000/z.lua
+- changyuheng/fz
 
 ## 使用
 
