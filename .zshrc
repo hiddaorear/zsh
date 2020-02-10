@@ -1,8 +1,3 @@
-export https_proxy="$http_proxy"
-export no_proxy="git.code.oa.com,r.tnpm.oa.com,*.mnet2.com"
-export http_proxy=http://127.0.0.1:12639
-export https_proxy=http://127.0.0.1:12639
-
 #-----------------------#
 #-----------------------#
 source ~/antigen.zsh
